@@ -34,7 +34,7 @@ function addTodo(todoText) {
   liElement.appendChild(checkBtn);
   liElement.appendChild(deleteBtn);
 
-  todoListUl.appendChild(liElement);
+  todoListUl.insertAdjacentElement("afterbegin", liElement);
 }
 
 function deleteTodo(e) {
@@ -49,6 +49,8 @@ function deleteTodo(e) {
 function checkTodo(e) {
   e.preventDefault();
   const targetLi = e.currentTarget.parentNode;
-  targetLi.firstChild.classList.add("checked");
-  todoListUl.appendChild(targetLi);
+  if (!targetLi.firstChild.classList.contains("checked")) {
+    targetLi.firstChild.classList.add("checked");
+    todoListUl.insertAdjacentElement("beforeend", targetLi);
+  }
 }
