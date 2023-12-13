@@ -58,6 +58,7 @@
   width: 40px;
   border: none;
   background-color: #dedede;
+  font-size: 20px;
 }
 .todo-btn:hover {
   background-color: #999999;
