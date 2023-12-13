@@ -68,4 +68,5 @@
 .checked {
   text-decoration: line-through;
   color: grey;
+  background-color: #f9dc89;
 }

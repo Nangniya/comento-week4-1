@@ -52,5 +52,8 @@ function checkTodo(e) {
   if (!targetLi.firstChild.classList.contains("checked")) {
     targetLi.firstChild.classList.add("checked");
     todoListUl.insertAdjacentElement("beforeend", targetLi);
+  } else {
+    targetLi.firstChild.classList.remove("checked");
+    todoListUl.insertAdjacentElement("afterbegin", targetLi);
   }
 }
