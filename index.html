@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-List</title>
+    <script
+      src="https://kit.fontawesome.com/1f09c3948c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="./index.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="whole-container">
+      <nav class="input-container">
+        <input id="add_todo_input" placeholder="Add Task" />
+        <button id="add_todo_btn">Add</button>
+      </nav>
+      <ul id="todo_list">
+        <li class="todo-box">
+          <span class="todo-text">example one</span>
+          <button class="todo-btn check-btn">
+            <i class="fa-solid fa-check"></i>
+          </button>
+          <button class="todo-btn delete-btn">
+            <i class="fa-sharp fa-solid fa-delete-left"></i>
+          </button>
+        </li>
+        <li class="todo-box">
+          <span class="todo-text">example two</span>
+          <button class="todo-btn check-btn">
+            <i class="fa-solid fa-check"></i>
+          </button>
+          <button class="todo-btn delete-btn">
+            <i class="fa-sharp fa-solid fa-delete-left"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
